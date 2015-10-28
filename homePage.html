@@ -5,6 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="styleHomePage.css">
 </head>
 <body>
+	<script type = 'text/javascript'>
+	var appear = function(){
+		document.getElementById('wateryPot').style.display = 'inline';
+	}
+	var disappear = function(){
+		document.getElementById('wateryPot').style.display = 'none';
+		setTimeout('appear()',1000);
+	}
+	</script>
 	<hr><h1 align="center">Flower Catalog</h1>
 
 	<hr><div id="image"><img src="freshorigins.jpg" border="2px"></div>
@@ -16,8 +25,9 @@
 		</ul>
 	</div>
 
-	<div id="wateryPot"><img src="animated-flower-image-0021.gif"></div>
+	<div id="wateryPot"><img src="animated-flower-image-0021.gif" onclick = 'disappear()'></div>
 
 	<div id="guestBook"><a href="">Guest Book</a></div>
 </body>
 </html>
+
