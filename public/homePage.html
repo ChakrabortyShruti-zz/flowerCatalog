@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flower_Catalog_Website</title>
+	<link rel="stylesheet" type="text/css" href="style-sheets/styleHomePage.css">
+</head>
+<body>
+	<script type = 'text/javascript'>
+	var appear = function(){
+		document.getElementById('wateryPot').style.display = 'inline';
+	}
+	var disappear = function(){
+		document.getElementById('wateryPot').style.display = 'none';
+		setTimeout('appear()',1000);
+	}
+	</script>
+	<hr><h1 align="center">Flower Catalog</h1>
+
+	<hr><div id="image"><img src="images/freshorigins.jpg" border="2px"></div>
+
+	<div id="sub-points">
+		<ul>
+			<li><a href="html/abeliophyllum.html">Abeliophyllum</a></li>
+			<li><a href="html/ageratum.html">Ageratum</a></li>
+		</ul>
+	</div>
+
+	<div id="wateryPot"><img src="images/animated-flower-image-0021.gif" onclick = 'disappear()'></div>
+
+	<div id="guestBook"><a href="">Guest Book</a></div>
+</body>
+</html>
+
